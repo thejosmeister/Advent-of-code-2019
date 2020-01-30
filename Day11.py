@@ -327,7 +327,7 @@ print(sorted(list_of_robot_coords))
 print(len(list_of_robot_coords))
 
 for j in reversed(range(-100, 100)):
-    for i in reversed(range(-100, 100)):
+    for i in range(-100, 100):
         if i == -99:
             if str(i) + "," + str(j) in white_coords:
                 print("#")
