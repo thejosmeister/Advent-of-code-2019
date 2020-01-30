@@ -181,17 +181,15 @@ def process_4(params_for_calc: dict):
     global output1
     global output2
     global robot_action
+	
     if output1 is None:
         output1 = params_for_calc["param1"]
-        print("output1: " + str(output1))
+        # print("output1: " + str(output1))
     else:
         output2 = params_for_calc["param1"]
-        print("output2: " + str(output2))
+        # print("output2: " + str(output2))
         robot_action = True
-
-
-    # bespoke functionality
-    # ######
+		
     machine_state = machine_state + 2
 
 
@@ -294,8 +292,8 @@ while not halt:
         process_instruction(int(instruction_code))
 
     if not halt:
-        print("state of robot: " + str(robot_state[0]) + "," + str(robot_state[1]))
-        print("robot direction: " + robot_direction)
+        # print("state of robot: " + str(robot_state[0]) + "," + str(robot_state[1]))
+        # print("robot direction: " + robot_direction)
         list_of_robot_coords.add(str(robot_state[0]) + "," + str(robot_state[1]))
 
         if output1 == 1:
@@ -316,25 +314,25 @@ while not halt:
         else:
             set_input(0)
 
-        print("state of robot: " + str(robot_state[0]) + "," + str(robot_state[1]))
+        # print("state of robot: " + str(robot_state[0]) + "," + str(robot_state[1]))
 
         robot_action = False
 
 
-print(white_coords)
-print(list_of_robot_coords)
-print(sorted(list_of_robot_coords))
+# print(white_coords)
+# print(list_of_robot_coords)
+# print(sorted(list_of_robot_coords))
 print(len(list_of_robot_coords))
 
-for j in reversed(range(-100, 100)):
-    for i in range(-100, 100):
-        if i == -99:
+for j in reversed(range(-5, 1)):
+    for i in (range(41)):
+        if i == 40:
             if str(i) + "," + str(j) in white_coords:
                 print("#")
             else:
-                print(".")
+                print(" ")
         else:
             if str(i) + "," + str(j) in white_coords:
                 print("#", end = "")
             else:
-                print(".", end = "")
+                print(" ", end = "")
