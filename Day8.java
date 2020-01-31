@@ -5,9 +5,6 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * @author josiah.filleul
- */
 public class Day8
 {
     public static void main( String[] args )
