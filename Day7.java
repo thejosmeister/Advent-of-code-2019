@@ -2,9 +2,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * @author josiah.filleul
- */
 public class Day7
 {
 //    public static int[] code =
