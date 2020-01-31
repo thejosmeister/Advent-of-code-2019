@@ -7,9 +7,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @author josiah.filleul
- */
 public class Day3
 {
     //returns map with all coords of wire
