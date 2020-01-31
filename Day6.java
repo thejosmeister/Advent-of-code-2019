@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-/**
- * @author josiah.filleul
- */
 public class Day6
 {
     //    public static String input = "COM)B\n"
