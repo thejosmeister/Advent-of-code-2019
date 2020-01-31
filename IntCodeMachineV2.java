@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @author josiah.filleul
- */
 public class IntCodeMachineV2
 {
 
