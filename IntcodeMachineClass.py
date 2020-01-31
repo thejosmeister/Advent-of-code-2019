@@ -15,7 +15,7 @@ class IntcodeMachine:
         self.halt = False
         self.input_var = 2
         self.input_used = False
-        self.output = 0
+        self.output = []
 
     def set_input(self, _input: int):
         self.input_var = _input
@@ -151,8 +151,8 @@ class IntcodeMachine:
         self.machine_state = self.machine_state + 2
 
     def process_4(self, params_for_calc: dict):
-        self.output = params_for_calc["param1"]
-        print("output: " + str(self.output))
+        self.output.append(params_for_calc["param1"])
+        # print("output: " + str(self.output))
 
         # bespoke functionality
         # self.set_input(self.output)
@@ -199,10 +199,12 @@ class IntcodeMachine:
 
     # main intcode program
 
-    def run(self):
+    def run(self) -> list:
         while not self.halt:
             # print("machine state: " + str(machine_state))
             # print("relative base: " + str(relative_base))
             # print(code_map)
             instruction_code = self.get_instruction_code()
             self.process_instruction(int(instruction_code))
+        
+        return self.output
