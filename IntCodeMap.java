@@ -2,9 +2,6 @@
 
 import java.util.HashMap;
 
-/**
- * @author josiah.filleul
- */
 public class IntCodeMap<K,V> extends HashMap<K,V>
 {
 
