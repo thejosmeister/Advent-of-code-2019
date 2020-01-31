@@ -6,9 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @author josiah.filleul
- */
 public class testing
 {
     public static void main( String[] args )
