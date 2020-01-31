@@ -1,9 +1,6 @@
 
 import java.util.Arrays;
 
-/**
- * @author josiah.filleul
- */
 public class IntCodeMachine
 {
 
