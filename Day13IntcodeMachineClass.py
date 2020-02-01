@@ -1,3 +1,5 @@
+import numpy as np
+
 class IntcodeMachine:
 
     def __init__(self, _input_string: str):
@@ -13,6 +15,8 @@ class IntcodeMachine:
         self.input_var = 2
         self.input_used = False
         self.output = []
+        self.score = 0
+        self.paused = False
 
     def set_input(self, _input: int):
         self.input_var = _input
@@ -143,9 +147,13 @@ class IntcodeMachine:
         self.machine_state = self.machine_state + 4
 
     def process_3(self, params_for_calc: dict):
-        self.code_map[str(params_for_calc["param1"])] = params_for_calc["param2"]
-        self.input_used = True
-        self.machine_state = self.machine_state + 2
+        if self.input_used:
+            self.paused = True
+            self.print_output()
+        else:
+            self.code_map[str(params_for_calc["param1"])] = params_for_calc["param2"]
+            self.input_used = True
+            self.machine_state = self.machine_state + 2
 
     def process_4(self, params_for_calc: dict):
         self.output.append(params_for_calc["param1"])
@@ -185,28 +193,55 @@ class IntcodeMachine:
     def process_9(self, params_for_calc: dict):
         self.relative_base = self.relative_base + params_for_calc["param1"]
         self.machine_state = self.machine_state + 2
-	
-	def print_output(self):
-		
+    
+    def print_output(self):
+        Array = np.zeros(shape=(21,38)).astype('int')
+        
+        for i in range(0, len(self.output), 3):
+            if self.output[i] == -1 and self.output[i + 1] == 0:
+                self.score = self.output[i + 2]
+            else:
+                Array[self.output[i + 1], self.output[i]] = self.output[i + 2]
+        
+        for row in Array:
+            self.print_array(row)
+        
+        print("score = " + str(self.score))
 
-    # # work out parameter settings
-    # # put values in
-    # .
-    # .
-    # .
-    # .
-    # operation 9 processor
+    def print_array(self, args: list):
+        for i in range(len(args)):
+            if i == len(args) - 1:
+                if args[i] == 0:
+                    print(str(" "))
+                if args[i] == 1:
+                    print(str("H"))
+                if args[i] == 2:
+                    print(str("#"))
+                if args[i] == 3:
+                    print(str("8"))
+                if args[i] == 4:
+                    print(str("O"))
+            else:
+                if args[i] == 0:
+                    print(str(" "), end = "")
+                if args[i] == 1:
+                    print(str("H"), end = "")
+                if args[i] == 2:
+                    print(str("#"), end = "")
+                if args[i] == 3:
+                    print(str("8"), end = "")
+                if args[i] == 4:
+                    print(str("O"), end = "")
+                
+    def unpause(self):
+        self.paused = False
 
     # main intcode program
 
     def run(self) -> list:
-        while not self.halt:
+        while self.halt == False and self.paused == False:
             # print("machine state: " + str(machine_state))
             # print("relative base: " + str(relative_base))
             # print(code_map)
             instruction_code = self.get_instruction_code()
             self.process_instruction(int(instruction_code))
-        
-        return self.output
-        
-        
