@@ -10,23 +10,23 @@ def pull_out_number(input_string: str) -> int:
     for letter in input_string:
         if letter.isnumeric():
             output = output + letter
-    
+
     return int(output)
 
+
 machine = IntcodeMachine(input_string)
-
 machine.run()
-
 output = machine.output
 
-
 set_of_scaffold_coords = set()
-list_of_scaffold_coords = []
-printable = []
 
+list_of_scaffold_coords = []
+
+printable = []
 x = 0
 y = 0
 count = 0
+
 while count < len(output):
     current = output[count]
     if current == 10:
@@ -38,17 +38,16 @@ while count < len(output):
         set_of_scaffold_coords.add(str([x, y]))
         list_of_scaffold_coords.append(str([x, y]))
         x = x + 1
-        
-    
-    count = count + 1
 
+    count = count + 1
 
 for entry in output:
     if entry == 35:
-        printable.append("#")
+        print("#", end = "")
+    elif entry == 10:
+        print(" ")
     else:
-        printable.append(" ")
-
-print(printable)
+        print(" ", end = "")
 
 # 3424 too high
+      
