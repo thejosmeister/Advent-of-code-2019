@@ -1,0 +1,221 @@
+{
+  "owner_id": "781641",
+  "members": {
+    "1064596": {
+      "global_score": 0,
+      "last_star_ts": "1606941095",
+      "stars": 4,
+      "completion_day_level": {
+        "1": {
+          "1": {
+            "get_star_ts": "1606854318"
+          },
+          "2": {
+            "get_star_ts": "1606854637"
+          }
+        },
+        "2": {
+          "1": {
+            "get_star_ts": "1606940756"
+          },
+          "2": {
+            "get_star_ts": "1606941095"
+          }
+        }
+      },
+      "id": "1064596",
+      "local_score": 8,
+      "name": "Richard Buckley"
+    },
+    "1010780": {
+      "global_score": 0,
+      "last_star_ts": "1606992499",
+      "stars": 6,
+      "completion_day_level": {
+        "1": {
+          "2": {
+            "get_star_ts": "1606814753"
+          },
+          "1": {
+            "get_star_ts": "1606814630"
+          }
+        },
+        "2": {
+          "2": {
+            "get_star_ts": "1606901463"
+          },
+          "1": {
+            "get_star_ts": "1606901124"
+          }
+        },
+        "3": {
+          "2": {
+            "get_star_ts": "1606992499"
+          },
+          "1": {
+            "get_star_ts": "1606991850"
+          }
+        }
+      },
+      "id": "1010780",
+      "local_score": 22,
+      "name": "Dan Rebati"
+    },
+    "781641": {
+      "name": "Mike Jenkins",
+      "local_score": 30,
+      "completion_day_level": {
+        "2": {
+          "2": {
+            "get_star_ts": "1606894382"
+          },
+          "1": {
+            "get_star_ts": "1606893611"
+          }
+        },
+        "3": {
+          "2": {
+            "get_star_ts": "1606981672"
+          },
+          "1": {
+            "get_star_ts": "1606981306"
+          }
+        },
+        "1": {
+          "2": {
+            "get_star_ts": "1606800659"
+          },
+          "1": {
+            "get_star_ts": "1606800345"
+          }
+        }
+      },
+      "id": "781641",
+      "stars": 6,
+      "last_star_ts": "1606981672",
+      "global_score": 0
+    },
+    "1098327": {
+      "completion_day_level": {
+        "1": {
+          "2": {
+            "get_star_ts": "1606918227"
+          },
+          "1": {
+            "get_star_ts": "1606917996"
+          }
+        }
+      },
+      "id": "1098327",
+      "local_score": 0,
+      "name": "shrewd-buffalo",
+      "global_score": 0,
+      "last_star_ts": "1606918227",
+      "stars": 2
+    },
+    "1009643": {
+      "id": "1009643",
+      "completion_day_level": {
+        "3": {
+          "2": {
+            "get_star_ts": "1606984472"
+          },
+          "1": {
+            "get_star_ts": "1606983921"
+          }
+        },
+        "2": {
+          "2": {
+            "get_star_ts": "1606899205"
+          },
+          "1": {
+            "get_star_ts": "1606898808"
+          }
+        },
+        "1": {
+          "1": {
+            "get_star_ts": "1606815828"
+          },
+          "2": {
+            "get_star_ts": "1606817078"
+          }
+        }
+      },
+      "local_score": 26,
+      "name": "thejosmeister",
+      "global_score": 0,
+      "last_star_ts": "1606984472",
+      "stars": 6
+    },
+    "1006768": {
+      "stars": 6,
+      "last_star_ts": "1606974249",
+      "global_score": 0,
+      "name": "Dan Storey",
+      "local_score": 26,
+      "id": "1006768",
+      "completion_day_level": {
+        "1": {
+          "2": {
+            "get_star_ts": "1606813519"
+          },
+          "1": {
+            "get_star_ts": "1606812321"
+          }
+        },
+        "3": {
+          "1": {
+            "get_star_ts": "1606973855"
+          },
+          "2": {
+            "get_star_ts": "1606974249"
+          }
+        },
+        "2": {
+          "1": {
+            "get_star_ts": "1606904060"
+          },
+          "2": {
+            "get_star_ts": "1606904754"
+          }
+        }
+      }
+    },
+    "1138500": {
+      "stars": 0,
+      "last_star_ts": 0,
+      "global_score": 0,
+      "name": "Chris Corday",
+      "local_score": 0,
+      "completion_day_level": {},
+      "id": "1138500"
+    },
+    "1067493": {
+      "stars": 4,
+      "last_star_ts": "1606950559",
+      "global_score": 0,
+      "name": "electric-lightning",
+      "local_score": 6,
+      "completion_day_level": {
+        "1": {
+          "1": {
+            "get_star_ts": "1606861419"
+          },
+          "2": {
+            "get_star_ts": "1606864339"
+          }
+        },
+        "2": {
+          "1": {
+            "get_star_ts": "1606947776"
+          },
+          "2": {
+            "get_star_ts": "1606950559"
+          }
+        }
+      },
+      "id": "1067493"
+    }
+  },
+  "event": "2020"
+}

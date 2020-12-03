@@ -13,7 +13,7 @@
 import time
 
 # Open file and remove \n stuff
-with open("day14Input.txt") as f:
+with open("Inputs/day14Input.txt") as f:
     list_of_recepies = f.readlines()
 
 list_of_recepies = [x.strip() for x in list_of_recepies]
